@@ -1,0 +1,24 @@
+{
+  "name": "basicnode",
+  "version": "1.0.0",
+  "description": "learn",
+  "homepage": "https://github.com/shubham1dubay/learsetup_node.js#readme",
+  "bugs": {
+    "url": "https://github.com/shubham1dubay/learsetup_node.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubham1dubay/learsetup_node.js.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  }
+}
