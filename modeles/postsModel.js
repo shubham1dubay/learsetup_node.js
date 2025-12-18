@@ -1,0 +1,23 @@
+const { required } = require('joi')
+const mongoose = require('mongoose')
+
+const postShema = mongoose.Schema({
+    title: {
+        type: String,
+        required: [true, 'title is requied']
+    },
+    description: {
+        type: String,
+        required: [true, 'description is required']
+    },
+    userId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
+    },
+},
+    {
+        timestamps: true
+    })
+
+module.exports = mongoose.model('post', postShema);
